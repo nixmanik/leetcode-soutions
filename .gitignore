@@ -1,0 +1,19 @@
+# Python compilation files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Vim / Neovim swap and backup files
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+*~
+*.un~
+.netrwhist
+
+# OS generated files
+.DS_Store
+EOF
