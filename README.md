@@ -9,7 +9,8 @@ No completion goals or anything, I just want to try to stay in practice after fl
 
 ## Repository Architecture
 
-Solutions will be separated by difficulty, but files are named after the LC problem including number, so hopefully it is simple enough to navigate.
+~~Solutions will be separated by difficulty, but files are named after the LC problem including number, so hopefully it is simple enough to navigate.~~
+EDIT: This dir structure felt more cumbersome than it was worth, so I changed it to a flat structure.
 
 * The core algorithmic class (`Solution`) sits at the top of code, which can be copy-pasted in LC to use their test cases.
 * I use Vim/NeoVim when I code, so I'll generally write in a test case or two to test in terminal instead of on LC's site. Written into __name__ so it won't get in the way of running on LC.
