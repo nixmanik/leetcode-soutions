@@ -20,12 +20,12 @@ Problems are categorized by difficulty and prefixed by their official LeetCode i
 ##  Development Environment
 
 * **Language:** Python 3.10+ (utilizing modern strict type hinting)
-* **Editor:** Neovim with lightly customised NVChad
+* **Editor:** Neovim with lightly customised NVChad on Linux, and a VS Codium container I can use in web browser
 * **Testing:** Depends on the problem, but should always clear all LC test cases online before I push
 
 ##  Running Solutions Locally
 
-For other learners, you can run solutions using python3 locally if you prefer:
+For other learners, you can run solutions using python3 locally if you prefer (whenever I tested manually instead of with Leetcode at least):
 
 ```bash
 python3 Medium/3619_count_islands_with_total_value_divisible_by_k.py
