@@ -28,6 +28,8 @@ This finds the LVP in one iteration, doing the following at each character in th
     * ELSE the stack is not empty and the substring from stack[-1] to this bracket could be the LVP
 
 This solution is O(n) time and O(n) space because it runs through each character and the stack will grow to at most n elements where every element was an open bracket
+
+EDIT: I forgot to explain the -1 stack: when i = 0, the lvp calcaulation would be wrong if that turned out to be lvp because 0 - 0 = 0. Setting -1 makes the result 1 at the start index (0 - -1) 
 """
 
 # I read up on the O(1) space optimisation, using two-pass scan to remove the need for the stack so I made this:
@@ -48,4 +50,4 @@ def longestValidParentheses_alt(self, s:str) -> int:
             return lvp
 
         return max(work(s,'('), work(reversed(s), ')'))
-# This is still O(n) time techincally even though it does two passes
+# This is still O(n) time technically even though it does two passes ( because O(2n) = O(n) )
